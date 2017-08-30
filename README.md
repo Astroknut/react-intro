@@ -49,17 +49,18 @@ If you're interested in exactly HOW Angular compares to React, [this article](ht
 
 - Angular is a **framework** that handles the entire frontend MVC. It scales incredibly well assuming there are no other changes to your tech stack. It is huge, powerful, and complex - it requires additional languages (Typescript) and has several new concepts (modules, controllers, scopes, and directives, etc) to learn.
 - React is a **library** written entirely in native JS with a JSX compiler, with only two main concepts (components and state). Focused mainly on the user interface, it creates reusable UI components that are fast and smooth. It's simple, and accomodates extensive alterations to your stack.
-- Combining React AND Angular will either create turn out like [this](https://vignette4.wikia.nocookie.net/amalgam/images/f/f5/Dark_Claw.jpg/revision/latest?cb=20110828213359) or like [this](https://s-media-cache-ak0.pinimg.com/originals/d7/67/2a/d7672a682d24c8f3f9ed29e3233b7449.jpg).
+- Combining React AND Angular will either turn out like [this](http://images5.fanpop.com/image/photos/24500000/Dark-Claw-amalgam-comics-24570126-1024-768.jpg) or like [this](https://s-media-cache-ak0.pinimg.com/originals/d7/67/2a/d7672a682d24c8f3f9ed29e3233b7449.jpg).
 
 ## Initial Setup
 
 In order to create a new project and to get our development environment setup, we are going to use the Terminal command `create-react-app`. It will create a new folder in your current directory for the in-class application. Here's an example of the setup commands:
 
-```bash
+```bash 
+$ cd react-intro
 $ npm i -g create-react-app
 $ create-react-app react-sample-app
 $ cd react-sample-app
-$ atom .
+$ subl .
 ```
 
 **Explore the app:** Open the new scaffolded application and write down 3 observations and one question you have about the files that you find!
@@ -157,6 +158,7 @@ Ok let's recap what's going on.
 
 Often times we write out React components in **JSX**.
 * JSX is [an alternate Javascript syntax](http://blog.yld.io/2015/06/10/getting-started-with-react-and-node-js/#.V8eDk5MrJPN) that allows us to write code that strongly resembles HTML. It is eventually transpiled to lightweight JavaScript objects.
+>Note - this might be a good time to search for a Sublime package called 'JSX', to provide proper syntax highlighting in your documents.
 
 * React then uses these objects to build out a "Virtual DOM" (more on that soon).
 
