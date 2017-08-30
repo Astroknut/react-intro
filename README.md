@@ -8,7 +8,7 @@ Finally! React is here!
 ### Why is this important?
 *This workshop is important because:*
 
-React is another solution to some of our front-end woes. It is a JavaScript *library* (not a framework) that allows us to reframe our pages in terms of the **components** that make it up. React focuses on generating views and managing how much of the DOM needs to change when you change pages.
+React is another solution to some of our front-end woes. It is a JavaScript *library* (not a framework) that allows us to reframe our pages in terms of the **components** that make it up. React provides a declarative library that keeps the DOM (the view) in sync with your data (the model). It is concerned only with the **V** in **MVC** (unlike Angular, which is MVC for the frontend) and as a result can be used in conjunction with other libraries to help manage state.
 
 
 
@@ -43,17 +43,13 @@ React was born out of Facebook's frustration with the traditional MVC model and 
 
 ### React in MVC
 
-React can be thought of as the "Views" layer.
+React's role is to use data to render a UI. This means that React can also coexist with other Javascript frameworks - including Angular! Let them handle the models and controllers, and have React sort out the views.
 
-<details>
-  <summary><strong>What is the role of a "view" in a front-end Javascript application?</strong></summary>
+If you're interested in exactly HOW Angular compares to React, [this article](https://www.quora.com/profile/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look) is a good place to start. To distill it to a couple bullet points:
 
-  > The visual template the user sees, populated with data from our models.
-
-</details>
-
-React's role is just to use data to render a UI. This means that React can also coexist with other Javascript frameworks. Let them handle the models and controllers, and have React sort out the views.
-
+- Angular is a **framework** that handles the entire frontend MVC. It scales incredibly well assuming there are no other changes to your tech stack. It is huge, powerful, and complex - it requires additional languages (Typescript) and has several new concepts (modules, controllers, scopes, and directives, etc) to learn.
+- React is a **library** written entirely in native JS with a JSX compiler, with only two main concepts (components and state). Focused mainly on the user interface, it creates reusable UI components that are fast and smooth. It's simple, and accomodates extensive alterations to your stack.
+- Combining React AND Angular will either create turn out like [this](https://vignette4.wikia.nocookie.net/amalgam/images/f/f5/Dark_Claw.jpg/revision/latest?cb=20110828213359) or like [this](https://s-media-cache-ak0.pinimg.com/originals/d7/67/2a/d7672a682d24c8f3f9ed29e3233b7449.jpg).
 
 ## Initial Setup
 
